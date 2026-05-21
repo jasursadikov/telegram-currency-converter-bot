@@ -2,13 +2,14 @@
 
 ![Example](img/img.png)
 
-This is an implementation of an inline currency converter bot for Telegram. You may use it at https://t.me/crcvbot
+This is the implementation of the inline [currency converter bot](https://t.me/crcvbot) for Telegram. You're welcome to ask questions and report any issues here.
 
 ## Using
 
-To use this bot, type `@crcvbot` followed by the amount of the current currency, the current currency code, and the desired currency code (`@crcv AMOUNT CURRENCY TARGET`) like this: `@crcv 1000 DKK USD` in any chat. The bot will then display the result as a message appearing to come from you. For example, converting 1000 DKK (Danish Krone) to USD (United States Dollars) will show up directly in the chat like this:
+To use, type `@crcvbot` followed by the amount of current currency code and followed with desired currency code - `@crcvbot 1000 DKK USD` (`@crcvbot AMOUNT CURRENCY TARGET`) in any chat. Then bot will dispay a pop-up with the result, whenever you tap on it, a message will be sent in your current chat.
 
 ## FAQ
 
-- It does not support cryptocurrencies.
-- It is free and only displays currency conversion, it does not transfer any money.
+- It is free to use.
+- Bot does not support cryptocurrencies.
+- Bot only displays currency conversion, it does NOT transfer any money.
