@@ -110,7 +110,7 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 		from_currency_emoji = currency_to_emoji(from_currency)
 		to_currency_emoji = currency_to_emoji(to_currency)
-		message = f'{COIN} {from_currency_emoji} {format_amount(amount)} {from_currency} \u27A1 {format_amount(converted_amount)} {to_currency} {to_currency_emoji}'
+		message = f'{from_currency_emoji} {format_amount(amount)} {from_currency} \u27A1 {format_amount(converted_amount)} {to_currency} {to_currency_emoji}'
 		results = [InlineQueryResultArticle(id='1', title=message, input_message_content=InputTextMessageContent(message))]
 		await update.inline_query.answer(results)
 		record_request(username)
